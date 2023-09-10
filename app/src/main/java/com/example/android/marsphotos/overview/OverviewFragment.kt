@@ -50,6 +50,10 @@ class OverviewFragment : Fragment() {
         // Sets the adapter of the photosGrid RecyclerView
         binding.photosGrid.adapter = PhotoGridAdapter()
 
+        binding.ivRenew.setOnClickListener {
+            viewModel.getMarsPhotos()
+        }
+
         return binding.root
     }
 }

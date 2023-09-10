@@ -55,7 +55,7 @@ class OverviewViewModel : ViewModel() {
      * Gets Mars photos information from the Mars API Retrofit service and updates the
      * [MarsPhoto] [List] [LiveData].
      */
-    private fun getMarsPhotos() {
+    fun getMarsPhotos() {
 
         viewModelScope.launch {
             _status.value = MarsApiStatus.LOADING

@@ -62,13 +62,15 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.7.0'
 
-    // Moshi
-    implementation 'com.squareup.moshi:moshi-kotlin:1.9.3'
-
-    // Retrofit with Moshi Converter
-    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
-
     // Coil
     implementation "io.coil-kt:coil:2.2.2"
-    
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+
+    // Retrofit with Gson Converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    //intercept攔截器
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.1"
 }
