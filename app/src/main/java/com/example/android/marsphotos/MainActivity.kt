@@ -16,16 +16,14 @@
 
 package com.example.android.marsphotos
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import com.example.android.marsphotos.base.BaseActivity
+import com.example.android.marsphotos.databinding.ActivityMainBinding
 
 /**
  * MainActivity sets the content view activity_main, a fragment container that contains
  * overviewFragment.
  */
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : BaseActivity<ActivityMainBinding>() {
+    override fun initView() {
     }
 }
