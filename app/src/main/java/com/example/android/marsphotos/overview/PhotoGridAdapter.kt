@@ -28,7 +28,7 @@ import com.example.android.marsphotos.network.MarsPhoto
  * This class implements a [RecyclerView] [ListAdapter] which uses Data Binding to present [List]
  * data, including computing diffs between lists.
  */
-class PhotoGridAdapter :
+class PhotoGridAdapter(var onClickCallback: (marsPhoto: MarsPhoto) -> Unit) :
     ListAdapter<MarsPhoto, PhotoGridAdapter.MarsPhotosViewHolder>(DiffCallback) {
 
     /**
@@ -36,7 +36,7 @@ class PhotoGridAdapter :
      * GridViewItem, which nicely gives it access to the full [MarsPhoto] information.
      */
     class MarsPhotosViewHolder(
-        private var binding: GridViewItemBinding
+        var binding: GridViewItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(marsPhoto: MarsPhoto) {
             binding.photo = marsPhoto
@@ -78,5 +78,8 @@ class PhotoGridAdapter :
     override fun onBindViewHolder(holder: MarsPhotosViewHolder, position: Int) {
         val marsPhoto = getItem(position)
         holder.bind(marsPhoto)
+        holder.binding.marsImage.setOnClickListener {
+            onClickCallback.invoke(marsPhoto)
+        }
     }
 }

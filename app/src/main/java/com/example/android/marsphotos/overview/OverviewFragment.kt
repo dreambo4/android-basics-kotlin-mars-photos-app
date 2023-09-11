@@ -16,9 +16,11 @@
 
 package com.example.android.marsphotos.overview
 
+import android.content.Intent
 import androidx.fragment.app.viewModels
 import com.example.android.marsphotos.base.BaseFragment
 import com.example.android.marsphotos.databinding.FragmentOverviewBinding
+import com.example.android.marsphotos.detail.DetailActivity
 
 /**
  * This fragment shows the the status of the Mars photos web services transaction.
@@ -35,7 +37,11 @@ class OverviewFragment : BaseFragment<FragmentOverviewBinding>() {
         binding.viewModel = viewModel
 
         // Sets the adapter of the photosGrid RecyclerView
-        binding.photosGrid.adapter = PhotoGridAdapter()
+        binding.photosGrid.adapter = PhotoGridAdapter {
+            var intent = Intent(activity, DetailActivity::class.java)
+            intent.putExtra(DetailActivity.INTENT_KEY_DATA, it)
+            startActivity(intent)
+        }
 
         binding.ivRenew.setOnClickListener {
             viewModel.getMarsPhotos()
