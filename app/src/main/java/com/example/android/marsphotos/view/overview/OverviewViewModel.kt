@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.marsphotos.overview
+package com.example.android.marsphotos.view.overview
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

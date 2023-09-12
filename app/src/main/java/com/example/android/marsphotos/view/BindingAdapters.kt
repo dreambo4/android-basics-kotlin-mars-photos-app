@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.marsphotos
+package com.example.android.marsphotos.view
 
 import android.view.View
 import android.widget.ImageView
@@ -22,9 +22,10 @@ import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.android.marsphotos.R
 import com.example.android.marsphotos.network.MarsPhoto
-import com.example.android.marsphotos.overview.MarsApiStatus
-import com.example.android.marsphotos.overview.PhotoGridAdapter
+import com.example.android.marsphotos.view.overview.MarsApiStatus
+import com.example.android.marsphotos.view.overview.PhotoGridAdapter
 
 /**
  * Updates the data shown in the [RecyclerView].

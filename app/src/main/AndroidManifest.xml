@@ -29,10 +29,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MarsPhotos">
         <activity
-            android:name=".detail.DetailActivity"
+            android:name="com.example.android.marsphotos.view.detail.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

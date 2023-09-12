@@ -1,7 +1,7 @@
-package com.example.android.marsphotos.detail
+package com.example.android.marsphotos.view.detail
 
-import com.example.android.marsphotos.base.BaseActivity
-import com.example.android.marsphotos.bindImage
+import com.example.android.marsphotos.view.base.BaseActivity
+import com.example.android.marsphotos.view.bindImage
 import com.example.android.marsphotos.databinding.ActivityDetailBinding
 import com.example.android.marsphotos.network.MarsPhoto
 

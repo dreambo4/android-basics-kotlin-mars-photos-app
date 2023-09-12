@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.example.android.marsphotos.overview
+package com.example.android.marsphotos.view.overview
 
 import android.content.Intent
 import androidx.fragment.app.viewModels
-import com.example.android.marsphotos.base.BaseFragment
+import com.example.android.marsphotos.view.base.BaseFragment
 import com.example.android.marsphotos.databinding.FragmentOverviewBinding
-import com.example.android.marsphotos.detail.DetailActivity
+import com.example.android.marsphotos.view.detail.DetailActivity
 
 /**
  * This fragment shows the the status of the Mars photos web services transaction.

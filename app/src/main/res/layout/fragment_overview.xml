@@ -24,13 +24,13 @@
 
         <variable
             name="viewModel"
-            type="com.example.android.marsphotos.overview.OverviewViewModel" />
+            type="com.example.android.marsphotos.view.overview.OverviewViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.android.marsphotos.overview.OverViewFragment">
+        tools:context=".view.overview.OverViewFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/photos_grid"

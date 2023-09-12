@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.example.android.marsphotos
+package com.example.android.marsphotos.view
 
-import com.example.android.marsphotos.base.BaseActivity
+import com.example.android.marsphotos.view.base.BaseActivity
 import com.example.android.marsphotos.databinding.ActivityMainBinding
 
 /**

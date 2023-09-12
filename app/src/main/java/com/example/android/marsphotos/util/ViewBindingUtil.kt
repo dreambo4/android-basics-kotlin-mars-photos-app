@@ -1,4 +1,4 @@
-package com.example.android.marsphotos.base
+package com.example.android.marsphotos.util
 
 import android.view.LayoutInflater
 import android.view.View
